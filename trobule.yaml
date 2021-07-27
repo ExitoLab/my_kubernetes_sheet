@@ -1,0 +1,5 @@
+#commands 
+
+kubectl exec webapp -- cat /logs/app.log
+
+kubectl run nginx --image=nginx --dry-run=client -o yaml > pod.yaml
